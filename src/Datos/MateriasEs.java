@@ -1,21 +1,15 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Datos;
 
-
 public class MateriasEs {
-    
-    String materia;
-    long cc;
 
-    public MateriasEs(long cc,String materia) {
+    String materia;
+    long id;
+
+    public MateriasEs(long id, String materia) {
         this.materia = materia;
-        this.cc = cc;
+        this.id = id;
     }
 
-    
     public String getMateria() {
         return materia;
     }
@@ -24,12 +18,12 @@ public class MateriasEs {
         this.materia = materia;
     }
 
-    public long getCc() {
-        return cc;
+    public long getId() {
+        return id;
     }
 
-    public void setCc(long cc) {
-        this.cc = cc;
+    public void setId(long cc) {
+        this.id = id;
     }
-    
+
 }

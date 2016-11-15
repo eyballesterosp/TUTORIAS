@@ -1,59 +1,78 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Datos;
 
 import java.io.Serializable;
 
-public class Estudiante extends Persona implements Serializable{
-    
-    private String nomest,direst,correst,ubiest;
-    private long ccest,telest,edadest,cartera;
+public class Estudiante extends Persona implements Serializable {
 
-    public Estudiante(String nomest, String direst, String correst, String ubiest, long ccest, long telest, long edadest, String persona, String tipo, String nombrepersona, String contraseña,long cartera) {
+    private String nomEst, dirEst, corrEst, ubiEst;
+    private long ccEst, telEst, edadEst, cartera;
+
+    public Estudiante(String nomEst, String dirEst, String corrEst, String ubiEst, long ccEst, long telEst, long edadEst, long cartera, String persona, String tipo, String nombrepersona, String contraseña) {
         super(persona, tipo, nombrepersona, contraseña);
-       
-        this.nomest = nomest;
-        this.direst = direst;
-        this.correst = correst;
-        this.ubiest = ubiest;
-        this.ccest = ccest;
-        this.telest = telest;
-        this.edadest = edadest;
-        this.cartera=cartera;
-        
-    }
-    public Estudiante(String persona,String tipo,String nombrepersona,String contraseña){
-        super(persona, tipo, nombrepersona, contraseña);
-           }
-    
-    public String getNomest() {
-        return nomest;
+        this.nomEst = nomEst;
+        this.dirEst = dirEst;
+        this.corrEst = corrEst;
+        this.ubiEst = ubiEst;
+        this.ccEst = ccEst;
+        this.telEst = telEst;
+        this.edadEst = edadEst;
+        this.cartera = cartera;
     }
 
-    public void setNomest(String nomest) {
-        this.nomest = nomest;
+    public String getNomEst() {
+        return nomEst;
     }
 
-    public String getDirest() {
-        return direst;
+    public void setNomEst(String nomEst) {
+        this.nomEst = nomEst;
     }
 
-    public void setDirest(String direst) {
-        this.direst = direst;
+    public String getDirEst() {
+        return dirEst;
     }
 
-    public String getCorrest() {
-        return correst;
+    public void setDirEst(String dirEst) {
+        this.dirEst = dirEst;
     }
 
-    public void setCorrest(String correst) {
-        this.correst = correst;
+    public String getCorrEst() {
+        return corrEst;
     }
 
-    public String getUbiest() {
-        return ubiest;
+    public void setCorrEst(String corrEst) {
+        this.corrEst = corrEst;
+    }
+
+    public String getUbiEst() {
+        return ubiEst;
+    }
+
+    public void setUbiEst(String ubiEst) {
+        this.ubiEst = ubiEst;
+    }
+
+    public long getCcEst() {
+        return ccEst;
+    }
+
+    public void setCcEst(long ccEst) {
+        this.ccEst = ccEst;
+    }
+
+    public long getTelEst() {
+        return telEst;
+    }
+
+    public void setTelEst(long telEst) {
+        this.telEst = telEst;
+    }
+
+    public long getEdadEst() {
+        return edadEst;
+    }
+
+    public void setEdadEst(long edadEst) {
+        this.edadEst = edadEst;
     }
 
     public long getCartera() {
@@ -64,31 +83,4 @@ public class Estudiante extends Persona implements Serializable{
         this.cartera = cartera;
     }
 
-    public void setUbiest(String ubiest) {
-        this.ubiest = ubiest;
-    }
-    
-    public long getCcest() {
-        return ccest;
-    }
-
-    public void setCcest(long ccest) {
-        this.ccest = ccest;
-    }
-
-    public long getTelest() {
-        return telest;
-    }
-
-    public void setTelest(long telest) {
-        this.telest = telest;
-    }
-
-    public long getEdadest() {
-        return edadest;
-    }
-
-    public void setEdadest(long edadest) {
-        this.edadest = edadest;
-    }
 }

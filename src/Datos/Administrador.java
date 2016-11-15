@@ -1,86 +1,76 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Datos;
 
 import java.io.Serializable;
 
 public class Administrador extends Persona implements Serializable{
-     private String nombadm,diradm,lugarnacadm,corradm;
-    private long ccadm,teladm,codadm;
+     private String nombAdm,dirAdm,lugarNacAdm,corrAdm;
+    private long ccAdm,telAdm,codAdm;
 
-    public Administrador(String nombadm, String diradm, String corradm, long ccadm, long teladm, long codadm, String persona, String tipo, String nombrepersona, String contraseña) {
+    public Administrador(String nombAdm, String dirAdm, String corrAdm, long ccAdm, long telAdm, long codAdm, String persona, String tipo, String nombrepersona, String contraseña) {
         super(persona, tipo, nombrepersona, contraseña);
-        this.nombadm = nombadm;
-        this.diradm = diradm;
-        this.corradm = corradm;
-        this.ccadm = ccadm;
-        this.teladm = teladm;
-        this.codadm = codadm;
- }
-
-    public Administrador(String persona,String tipo,String nombrepersona,String contraseña){
-        super(persona, tipo, nombrepersona, contraseña);
-    }
-    public String getNombadm() {
-        return nombadm;
+        this.nombAdm = nombAdm;
+        this.dirAdm = dirAdm;
+        this.corrAdm = corrAdm;
+        this.ccAdm = ccAdm;
+        this.telAdm = telAdm;
+        this.codAdm = codAdm;
     }
 
-    public void setNombadm(String nombadm) {
-        this.nombadm = nombadm;
+    public String getNombAdm() {
+        return nombAdm;
     }
 
-    public String getDiradm() {
-        return diradm;
+    public void setNombAdm(String nombAdm) {
+        this.nombAdm = nombAdm;
     }
 
-    public void setDiradm(String diradm) {
-        this.diradm = diradm;
+    public String getDirAdm() {
+        return dirAdm;
     }
 
-  
-
-    public String getLugarnacadm() {
-        return lugarnacadm;
+    public void setDirAdm(String dirAdm) {
+        this.dirAdm = dirAdm;
     }
 
-    public void setLugarnacadm(String lugarnacadm) {
-        this.lugarnacadm = lugarnacadm;
+    public String getLugarNacAdm() {
+        return lugarNacAdm;
     }
 
-  
-    public String getCorradm() {
-        return corradm;
+    public void setLugarNacAdm(String lugarNacAdm) {
+        this.lugarNacAdm = lugarNacAdm;
     }
 
-    public void setCorradm(String corradm) {
-        this.corradm = corradm;
+    public String getCorrAdm() {
+        return corrAdm;
     }
 
-    public long getCcadm() {
-        return ccadm;
+    public void setCorrAdm(String corrAdm) {
+        this.corrAdm = corrAdm;
     }
 
-    public void setCcadm(long ccadm) {
-        this.ccadm = ccadm;
+    public long getCcAdm() {
+        return ccAdm;
     }
 
-    public long getTeladm() {
-        return teladm;
+    public void setCcAdm(long ccAdm) {
+        this.ccAdm = ccAdm;
     }
 
-    public void setTeladm(long teladm) {
-        this.teladm = teladm;
+    public long getTelAdm() {
+        return telAdm;
     }
 
-
-
-    public long getCodadm() {
-        return codadm;
+    public void setTelAdm(long telAdm) {
+        this.telAdm = telAdm;
     }
 
-    public void setCodadm(long codadm) {
-        this.codadm = codadm;
+    public long getCodAdm() {
+        return codAdm;
     }
+
+    public void setCodAdm(long codAdm) {
+        this.codAdm = codAdm;
+    }
+
 }

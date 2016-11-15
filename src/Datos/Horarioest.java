@@ -1,19 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Datos;
 
-/**
- *
- * @author panamericana
- */
 public class Horarioest {
-    public String lunes, martes,miercoles,jueves,viernes,hora;
+
+    public String lunes, martes, miercoles, jueves, viernes, hora;
     public long ccestu;
 
-    public Horarioest(String hora,String lunes, String martes, String miercoles, String jueves, String viernes, long ccestu) {
-       this.hora=hora;
+    public Horarioest(String hora, String lunes, String martes, String miercoles, String jueves, String viernes, long ccestu) {
+        this.hora = hora;
         this.lunes = lunes;
         this.martes = martes;
         this.miercoles = miercoles;
@@ -30,7 +23,6 @@ public class Horarioest {
         this.hora = hora;
     }
 
-    
     public String getLunes() {
         return lunes;
     }
@@ -78,5 +70,5 @@ public class Horarioest {
     public void setCcestu(long ccestu) {
         this.ccestu = ccestu;
     }
-    
+
 }

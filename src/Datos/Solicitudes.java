@@ -1,41 +1,34 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Datos;
 
 import java.io.Serializable;
 
-public class Solicitudes implements Serializable{
-    
-        private String nombreDe;
-	private String nombrePara;
-	private String solicitud;
-	private String respuesta;
-	private long codigoSolicitud;
-        
-	public Solicitudes(String nombreDe,String nombrePara,long codigoSolicitud, String solicitud, String respuesta) {
-		this.nombreDe=nombreDe;
-		this.nombrePara=nombrePara;
-		this.solicitud=solicitud;
-		this.respuesta=respuesta;
-		this.codigoSolicitud=codigoSolicitud;
-	}
+public class Solicitudes implements Serializable {
 
-    public String getNombreDe() {
-        return nombreDe;
+    private String nombreRemitente, nombreDestinatario, solicitud, respuesta;
+    private long idSolicitud;
+
+    public Solicitudes(String nombreRemitente, String nombreDestinatario, String solicitud, String respuesta, long idSolicitud) {
+        this.nombreRemitente = nombreRemitente;
+        this.nombreDestinatario = nombreDestinatario;
+        this.solicitud = solicitud;
+        this.respuesta = respuesta;
+        this.idSolicitud = idSolicitud;
     }
 
-    public void setNombreDe(String nombreDe) {
-        this.nombreDe = nombreDe;
+    public String getNombreRemitente() {
+        return nombreRemitente;
     }
 
-    public String getNombrePara() {
-        return nombrePara;
+    public void setNombreRemitente(String nombreRemitente) {
+        this.nombreRemitente = nombreRemitente;
     }
 
-    public void setNombrePara(String nombrePara) {
-        this.nombrePara = nombrePara;
+    public String getNombreDestinatario() {
+        return nombreDestinatario;
+    }
+
+    public void setNombreDestinatario(String nombreDestinatario) {
+        this.nombreDestinatario = nombreDestinatario;
     }
 
     public String getSolicitud() {
@@ -54,13 +47,12 @@ public class Solicitudes implements Serializable{
         this.respuesta = respuesta;
     }
 
-    public long getCodigoSolicitud() {
-        return codigoSolicitud;
+    public long getIdSolicitud() {
+        return idSolicitud;
     }
 
-    public void setCodigoSolicitud(long codigoSolicitud) {
-        this.codigoSolicitud = codigoSolicitud;
+    public void setIdSolicitud(long idSolicitud) {
+        this.idSolicitud = idSolicitud;
     }
+
 }
-	
-	

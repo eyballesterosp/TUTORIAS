@@ -1,30 +1,25 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Datos;
 
-
 public class Calificaciones {
-    public  long cctut,puntaje,codexam;
-    public String fechaci,lugarci,nombreaspirante;
 
-    public Calificaciones(long cctut, long puntaje, long codexam, String fechaci, String lugarci, String nombreaspirante) {
-        this.cctut = cctut;
+    public long ccTut, puntaje, codExam;
+    public String fechaCi, lugarCi, nombreAspirante;
+
+    public Calificaciones(long ccTut, long puntaje, long codExam, String fechaCi, String lugarCi, String nombreAspirante) {
+        this.ccTut = ccTut;
         this.puntaje = puntaje;
-        this.codexam = codexam;
-        this.fechaci = fechaci;
-        this.lugarci = lugarci;
-        this.nombreaspirante = nombreaspirante;
+        this.codExam = codExam;
+        this.fechaCi = fechaCi;
+        this.lugarCi = lugarCi;
+        this.nombreAspirante = nombreAspirante;
     }
 
-    
-    public long getCctut() {
-        return cctut;
+    public long getCcTut() {
+        return ccTut;
     }
 
-    public void setCctut(long cctut) {
-        this.cctut = cctut;
+    public void setCcTut(long ccTut) {
+        this.ccTut = ccTut;
     }
 
     public long getPuntaje() {
@@ -35,36 +30,36 @@ public class Calificaciones {
         this.puntaje = puntaje;
     }
 
-    public long getCodexam() {
-        return codexam;
+    public long getCodExam() {
+        return codExam;
     }
 
-    public void setCodexam(long codexam) {
-        this.codexam = codexam;
+    public void setCodExam(long codExam) {
+        this.codExam = codExam;
     }
 
-    public String getFechaci() {
-        return fechaci;
+    public String getFechaCi() {
+        return fechaCi;
     }
 
-    public void setFechaci(String fechaci) {
-        this.fechaci = fechaci;
+    public void setFechaCi(String fechaCi) {
+        this.fechaCi = fechaCi;
     }
 
-    public String getLugarci() {
-        return lugarci;
+    public String getLugarCi() {
+        return lugarCi;
     }
 
-    public void setLugarci(String lugarci) {
-        this.lugarci = lugarci;
+    public void setLugarCi(String lugarCi) {
+        this.lugarCi = lugarCi;
     }
 
-    public String getNombreaspirante() {
-        return nombreaspirante;
+    public String getNombreAspirante() {
+        return nombreAspirante;
     }
 
-    public void setNombreaspirante(String nombreaspirante) {
-        this.nombreaspirante = nombreaspirante;
+    public void setNombreAspirante(String nombreAspirante) {
+        this.nombreAspirante = nombreAspirante;
     }
-    
+
 }

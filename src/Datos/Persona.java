@@ -1,18 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Datos;
 
-
 public class Persona {
-     private String persona,tipo,nombrepersona,contraseña;
-    
 
-    public Persona(String persona, String tipo, String nombrepersona, String contraseña) {
+    private String persona, tipo, nombrePersona, contraseña;
+
+    public Persona(String persona, String tipo, String nombrePersona, String contraseña) {
         this.persona = persona;
         this.tipo = tipo;
-        this.nombrepersona = nombrepersona;
+        this.nombrePersona = nombrePersona;
         this.contraseña = contraseña;
     }
 
@@ -33,11 +28,11 @@ public class Persona {
     }
 
     public String getNombrepersona() {
-        return nombrepersona;
+        return nombrePersona;
     }
 
-    public void setNombrepersona(String nombrepersona) {
-        this.nombrepersona = nombrepersona;
+    public void setNombrepersona(String nombrePersona) {
+        this.nombrePersona = nombrePersona;
     }
 
     public String getContraseña() {
@@ -46,5 +41,5 @@ public class Persona {
 
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
-    }  
+    }
 }

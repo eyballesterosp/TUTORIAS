@@ -1,16 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Datos;
 
-
 public class Horariotutor {
-    public String lunes, martes,miercoles,jueves,viernes,hora;
+
+    public String lunes, martes, miercoles, jueves, viernes, hora;
     public long cctutor;
 
-    public Horariotutor(String hora,String lunes, String martes, String miercoles, String jueves, String viernes, long cctutor) {
-        this.hora=hora;
+    public Horariotutor(String hora, String lunes, String martes, String miercoles, String jueves, String viernes, long cctutor) {
+        this.hora = hora;
         this.lunes = lunes;
         this.martes = martes;
         this.miercoles = miercoles;
@@ -27,7 +23,6 @@ public class Horariotutor {
         this.hora = hora;
     }
 
-    
     public String getLunes() {
         return lunes;
     }
@@ -75,6 +70,5 @@ public class Horariotutor {
     public void setCctutor(long cctutor) {
         this.cctutor = cctutor;
     }
-    
-    
+
 }

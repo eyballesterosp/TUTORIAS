@@ -1,92 +1,73 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Datos;
 
 import java.io.Serializable;
 
 
 public class Tutorias implements Serializable{
-    private String nomtutor,nomreestu,lugartu,fechatut,horatut,tematut,estado,calt,come;
+    private String nameTutor,nameEst,lugarTu,fechaTut,horaTut,temaTut,estado,calTut,come;
     private long tel,costo;
 
-    public Tutorias(String nomtutor, String nomreestu, String lugartu, String fechatut, String horatut, String tematut, String estado, long tel, long costo,String calt,String come) {
-        this.nomtutor = nomtutor;
-        this.nomreestu = nomreestu;
-        this.lugartu = lugartu;
-        this.fechatut = fechatut;
-        this.horatut = horatut;
-        this.tematut = tematut;
+    public Tutorias(String nameTutor, String nameEst, String lugarTu, String fechaTut, String horaTut, String temaTut, String estado, String calTut, String come, long tel, long costo) {
+        this.nameTutor = nameTutor;
+        this.nameEst = nameEst;
+        this.lugarTu = lugarTu;
+        this.fechaTut = fechaTut;
+        this.horaTut = horaTut;
+        this.temaTut = temaTut;
         this.estado = estado;
+        this.calTut = calTut;
+        this.come = come;
         this.tel = tel;
         this.costo = costo;
-        this.calt=calt;
-        this.come=come;
     }
 
-    public String getCalt() {
-        return calt;
+    public String getNameTutor() {
+        return nameTutor;
     }
 
-    public void setCalt(String calt) {
-        this.calt = calt;
+    public void setNameTutor(String nameTutor) {
+        this.nameTutor = nameTutor;
     }
 
-    public String getCome() {
-        return come;
+    public String getNameEst() {
+        return nameEst;
     }
 
-    public void setCome(String come) {
-        this.come = come;
+    public void setNameEst(String nameEst) {
+        this.nameEst = nameEst;
     }
 
-    public String getNomtutor() {
-        return nomtutor;
+    public String getLugarTu() {
+        return lugarTu;
     }
 
-    public void setNomtutor(String nomtutor) {
-        this.nomtutor = nomtutor;
+    public void setLugarTu(String lugarTu) {
+        this.lugarTu = lugarTu;
     }
 
-    public String getNomreestu() {
-        return nomreestu;
+    public String getFechaTut() {
+        return fechaTut;
     }
 
-    public void setNomreestu(String nomreestu) {
-        this.nomreestu = nomreestu;
+    public void setFechaTut(String fechaTut) {
+        this.fechaTut = fechaTut;
     }
 
-    public String getLugartu() {
-        return lugartu;
+    public String getHoraTut() {
+        return horaTut;
     }
 
-    public void setLugartu(String lugartu) {
-        this.lugartu = lugartu;
+    public void setHoraTut(String horaTut) {
+        this.horaTut = horaTut;
     }
 
-    public String getFechatut() {
-        return fechatut;
+    public String getTemaTut() {
+        return temaTut;
     }
 
-    public void setFechatut(String fechatut) {
-        this.fechatut = fechatut;
-    }
-
-    public String getHoratut() {
-        return horatut;
-    }
-
-    public void setHoratut(String horatut) {
-        this.horatut = horatut;
-    }
-
-    public String getTematut() {
-        return tematut;
-    }
-
-    public void setTematut(String tematut) {
-        this.tematut = tematut;
+    public void setTemaTut(String temaTut) {
+        this.temaTut = temaTut;
     }
 
     public String getEstado() {
@@ -95,6 +76,22 @@ public class Tutorias implements Serializable{
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getCalTut() {
+        return calTut;
+    }
+
+    public void setCalTut(String calTut) {
+        this.calTut = calTut;
+    }
+
+    public String getCome() {
+        return come;
+    }
+
+    public void setCome(String come) {
+        this.come = come;
     }
 
     public long getTel() {
@@ -112,6 +109,5 @@ public class Tutorias implements Serializable{
     public void setCosto(long costo) {
         this.costo = costo;
     }
-
-    
+   
 }

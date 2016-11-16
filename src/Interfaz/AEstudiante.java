@@ -10,37 +10,39 @@ import java.awt.BorderLayout;
 import java.io.File;
 import javax.swing.JOptionPane;
 
-
 public class AEstudiante extends javax.swing.JFrame {
- public LTutorias ltu = new LTutorias();
-    private String usuarioasp=null,tipo ="Estudiante",nombre=null,contrasp=null,cc=null,tel=null,edad=null;
-    private long numt=0,ccasp=0,telasp=0,edadasp=0,cartera=0,codexamen=0,puntaje=0;
-    
+
+    public LTutorias ltu = new LTutorias();
+    private String usuarioasp = null, tipo = "Estudiante", nombre = null, contrasp = null, cc = null, tel = null, edad = null;
+    private long numt = 0, ccasp = 0, telasp = 0, edadasp = 0, cartera = 0, codexamen = 0, puntaje = 0;
+
     /**
      * Creates new form Aspirante
      */
     public AEstudiante() {
         initComponents();
-        Fondo2 f= new Fondo2();
+        Fondo2 f = new Fondo2();
         this.add(f, BorderLayout.CENTER);
         this.pack();
-         String s5 = "Personas.csv";
-            File f5 = new File(s5);
-            if(f5.exists()){
+        String s5 = "Personas.csv";
+        File f5 = new File(s5);
+        if (f5.exists()) {
 
-                ltu.cargararchivousu();
-            }
-            String sFichero = "Estudiantes.csv";
-            File fichero = new File(sFichero);
-            if(fichero.exists()){
+            ltu.cargararchivousu();
+        }
+        String sFichero = "Estudiantes.csv";
+        File fichero = new File(sFichero);
+        if (fichero.exists()) {
 
-           ltu.cargararchivoest();}
-            
-             String s2 = "Materias Estudiantes.csv";
-            File fichero2 = new File(s2);
-            if(fichero2.exists()){
+            ltu.cargararchivoest();
+        }
 
-           ltu.cargararchivomae();}
+        String s2 = "Materias Estudiantes.csv";
+        File fichero2 = new File(s2);
+        if (fichero2.exists()) {
+
+            ltu.cargararchivomae();
+        }
     }
 
     /**
@@ -442,47 +444,46 @@ public class AEstudiante extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnIngresar3ActionPerformed
 
     private void verificarcontraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificarcontraActionPerformed
-try {
+        try {
             String sFichero = "Personas.csv";
             File fichero = new File(sFichero);
-            if(fichero.exists()){
+            if (fichero.exists()) {
 
-                }else{
+            } else {
                 ltu.crearcvsusu();
             }
-          cc=TxtCcasp.getText().toString();
-                ccasp= Long.parseLong(cc);
-            usuarioasp=TxtUsuasp.getText().toString();
-      //  System.out.println("usuario"+usuarioasp);
-        nombre=TxtNombreasp.getText().toString();
-      //  System.out.println("nombre"+nombre);
-       contrasp= contra.getText().toString();
-     //   System.out.println("contraseña"+contrasp);
-        
+            cc = TxtCcasp.getText().toString();
+            ccasp = Long.parseLong(cc);
+            usuarioasp = TxtUsuasp.getText().toString();
+            //  System.out.println("usuario"+usuarioasp);
+            nombre = TxtNombreasp.getText().toString();
+            //  System.out.println("nombre"+nombre);
+            contrasp = contra.getText().toString();
+            //   System.out.println("contraseña"+contrasp);
+
             for (int i = 0; i < ltu.getPer().size(); i++) {
-                
-                if((usuarioasp.equals(ltu.getPer().get(i).getPersona()))&&(contrasp.equals(ltu.getPer().get(i).getContraseña()))){
-                   JOptionPane.showMessageDialog(null, "Error, el usuario y la contraseña ya existen",null,JOptionPane.ERROR_MESSAGE);   
-        break;
-                    
+
+                if ((usuarioasp.equals(ltu.getPer().get(i).getPersona())) && (contrasp.equals(ltu.getPer().get(i).getContraseña()))) {
+                    JOptionPane.showMessageDialog(null, "Error, el usuario y la contraseña ya existen", null, JOptionPane.ERROR_MESSAGE);
+                    break;
+
                 }
             }
-        if(contra.getText().toString().equals(recontra.getText().toString())){
-            
-         ltu.persona(usuarioasp, tipo, nombre, contrasp);
-                    JOptionPane.showMessageDialog(null, "Las contraseñas son iguales",null,JOptionPane.INFORMATION_MESSAGE);   
+            if (contra.getText().toString().equals(recontra.getText().toString())) {
 
-        }else{
-         JOptionPane.showMessageDialog(null, "Error, las contraseñas no coinciden, puede continuar",null,JOptionPane.ERROR_MESSAGE);   
-        }
-        
-      
+                ltu.persona(usuarioasp, tipo, nombre, contrasp);
+                JOptionPane.showMessageDialog(null, "Las contraseñas son iguales", null, JOptionPane.INFORMATION_MESSAGE);
+
+            } else {
+                JOptionPane.showMessageDialog(null, "Error, las contraseñas no coinciden, puede continuar", null, JOptionPane.ERROR_MESSAGE);
+            }
+
         } catch (Exception e) {
-        JOptionPane.showMessageDialog(null, "Error",null,JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Error", null, JOptionPane.ERROR_MESSAGE);
 
-        } 
-                // TODO add your handling code here:
-        
+        }
+        // TODO add your handling code here:
+
     }//GEN-LAST:event_verificarcontraActionPerformed
 
     private void contraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contraActionPerformed
@@ -495,10 +496,10 @@ try {
 
     private void BtnGuardarHV3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarHV3ActionPerformed
 
-                System.out.println("ccasp"+ccasp);
-                HorarioEstudiante ht=new HorarioEstudiante();
-ht.setScc(ccasp);
-ht.setVisible(true);       // TODO add your handling code here:
+        System.out.println("ccasp" + ccasp);
+        HorarioEstudiante ht = new HorarioEstudiante();
+        ht.setScc(ccasp);
+        ht.setVisible(true);       // TODO add your handling code here:
     }//GEN-LAST:event_BtnGuardarHV3ActionPerformed
 
     private void TxtEdadaspActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtEdadaspActionPerformed
@@ -508,12 +509,12 @@ ht.setVisible(true);       // TODO add your handling code here:
     private void BtnGuardarHV2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarHV2ActionPerformed
 
         try {
-            if(ComboMateriasest.getSelectedItem().toString().equals("...")){
-                JOptionPane.showMessageDialog(null, "Ingrese una materia",null,JOptionPane.ERROR_MESSAGE);
+            if (ComboMateriasest.getSelectedItem().toString().equals("...")) {
+                JOptionPane.showMessageDialog(null, "Ingrese una materia", null, JOptionPane.ERROR_MESSAGE);
             }
             ltu.crearmae(ccasp, ComboMateriasest.getSelectedItem().toString());
             ltu.crearcvsmae();
-                 JOptionPane.showMessageDialog(null, "Materia agregada",null,JOptionPane.INFORMATION_MESSAGE);   
+            JOptionPane.showMessageDialog(null, "Materia agregada", null, JOptionPane.INFORMATION_MESSAGE);
         } catch (Exception e) {
         }        // TODO add your handling code here:
     }//GEN-LAST:event_BtnGuardarHV2ActionPerformed
@@ -539,59 +540,59 @@ ht.setVisible(true);       // TODO add your handling code here:
     }//GEN-LAST:event_TxtCcaspActionPerformed
 
     private void BtnGuardarHVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarHVActionPerformed
-try {
+        try {
             String sFichero = "Estudiante.csv";
             File fichero = new File(sFichero);
-            if(fichero.exists()){
-}else{
+            if (fichero.exists()) {
+            } else {
                 ltu.crearcvsest();
             }
-              if((usuarioasp!=null)&&(nombre!=null)&&(contrasp!=null)&&(tipo!=null)){
-             
+            if ((usuarioasp != null) && (nombre != null) && (contrasp != null) && (tipo != null)) {
 
-                cc=TxtCcasp.getText().toString();
-                ccasp= Long.parseLong(cc);
-              
-                tel=Txtelasp.getText().toString();
-                telasp=Long.parseLong(tel);
-                edad=TxtEdadasp.getText().toString();
-            
-               edadasp=Long.parseLong(edad);System.out.println("nombre"+nombre);
-                System.out.println("tipo"+tipo);
+                cc = TxtCcasp.getText().toString();
+                ccasp = Long.parseLong(cc);
+
+                tel = Txtelasp.getText().toString();
+                telasp = Long.parseLong(tel);
+                edad = TxtEdadasp.getText().toString();
+
+                edadasp = Long.parseLong(edad);
+                System.out.println("nombre" + nombre);
+                System.out.println("tipo" + tipo);
 //nomest, direst,correst,ubiest,ccesti,telesti, edadesti, usuario, tipo, nombreusuario, contraseña
                 ltu.estudiante(TxtNombreasp.getText().toString(), Txtdirasp.getText().toString(),
-                        TxtCorreoasp.getText().toString(),ComboUbiasp.getSelectedItem().toString(),
-                        ccasp,telasp,edadasp,usuarioasp, tipo, nombre, contrasp,cartera);
+                        TxtCorreoasp.getText().toString(), ComboUbiasp.getSelectedItem().toString(),
+                        ccasp, telasp, edadasp, cartera, tipo, tipo, nombre, contrasp);
 
                 System.out.println("ahi vamos2");
 
                 for (int j = 0; j < ltu.getEst().size(); j++) {
-                    System.out.println("array edad"+ltu.getEst().get(j).getEdadest());
+                    System.out.println("array edad" + ltu.getEst().get(j).getEdadEst());
 
                 }
 
-ltu.crearcvsest();
-ltu.crearcvsusu();
+                ltu.crearcvsest();
+                ltu.crearcvsusu();
 
-                     JOptionPane.showMessageDialog(null, "Datos guardados exitosamente",null,JOptionPane.INFORMATION_MESSAGE);   
+                JOptionPane.showMessageDialog(null, "Datos guardados exitosamente", null, JOptionPane.INFORMATION_MESSAGE);
 
                 System.out.println("lleno");
 
-                System.out.println("tamaño"+ltu.getEst().size());
+                System.out.println("tamaño" + ltu.getEst().size());
 
-              }else{
-      JOptionPane.showMessageDialog(null, "Por favor ingrese su usuario y contraseña para crear su perfil", null,JOptionPane.ERROR_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(null, "Por favor ingrese su usuario y contraseña para crear su perfil", null, JOptionPane.ERROR_MESSAGE);
 
-              }
+            }
 
-        }catch (Exception e) {
+        } catch (Exception e) {
 
-            JOptionPane.showMessageDialog(null, "Error",null,JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Error", null, JOptionPane.ERROR_MESSAGE);
         }        // TODO add your handling code here:
     }//GEN-LAST:event_BtnGuardarHVActionPerformed
 
     private void BtnGuardarHV1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarHV1ActionPerformed
-new Inicio().setVisible(true);
+        new Inicio().setVisible(true);
         this.show(false);
 // TODO add your handling code here:
     }//GEN-LAST:event_BtnGuardarHV1ActionPerformed
@@ -599,7 +600,7 @@ new Inicio().setVisible(true);
     /**
      * @param args the command line arguments
      */
-   
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnGuardarHV;
     private javax.swing.JButton BtnGuardarHV1;

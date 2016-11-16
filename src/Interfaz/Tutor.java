@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Interfaz;
 
 import Logica.LTutorias;
@@ -1353,18 +1350,18 @@ long f = 0, cest = 0, costu = 0;
         for (int i = 0; i < ltu.getAs().size(); i++) {
             if (nombretut.equals(ltu.getAs().get(i).getPersona())) {
                 
-                nom=ltu.getAs().get(i).getNomtut().toString();
+                nom=ltu.getAs().get(i).getNomTut().toString();
                 System.out.println("if"+nombretut+nom);
                 for (int j = 0; j <ltu.getTutorias().size(); j++) {
-                    if (nom.equals(ltu.getTutorias().get(j).getNomtutor())) {
+                    if (nom.equals(ltu.getTutorias().get(j).getNameTutor())) {
                          ((DefaultTableModel) Tablatutorisa.getModel()).setRowCount(Tablatutorisa.getRowCount() + 1);
                         System.out.println("hora" + ltu.getHtutor().get(j).getHora().toString());
-                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getNomtutor().toString(), p, 0);
-                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getNomreestu(), p, 1);
-                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getLugartu(), p, 2);
-                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getFechatut(), p, 3);
-                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getHoratut(), p, 4);
-                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getTematut(), p, 5);
+                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getNameTutor().toString(), p, 0);
+                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getNameEst(), p, 1);
+                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getLugarTu(), p, 2);
+                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getFechaTut(), p, 3);
+                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getHoraTut(), p, 4);
+                        Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getTemaTut(), p, 5);
                         Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getEstado(), p, 6);
                         Tablatutorisa.setValueAt(ltu.getTutorias().get(j).getCosto(), p, 7);
                         p = p + 1;
@@ -1397,14 +1394,14 @@ long f = 0, cest = 0, costu = 0;
 
         for (int j = 0; j < ltu.getEst().size(); j++) {
 
-            if (b1.equals(ltu.getEst().get(j).getNomest())) {
+            if (b1.equals(ltu.getEst().get(j).getNomEst())) {
                 ((DefaultTableModel) TablaEstudiantes.getModel()).setRowCount(TablaEstudiantes.getRowCount() + 1);
                            
-                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getNomest().toString(), p, 0);
-                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getDirest(), p, 1);
-                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getTelest(), p, 2);
-                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getCorrest(), p, 3);
-                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getUbiest(), p, 4);
+                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getNomEst().toString(), p, 0);
+                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getDirEst(), p, 1);
+                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getTelEst(), p, 2);
+                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getCorrEst(), p, 3);
+                            TablaEstudiantes.setValueAt(ltu.getEst().get(j).getUbiEst(), p, 4);
                             
                             p = p + 1;
             }
@@ -1438,7 +1435,7 @@ long f = 0, cest = 0, costu = 0;
 
 
         for (int k = 0; k < ltu.getTutorias().size(); k++) {
-            if ((b1.equals(ltu.getTutorias().get(k).getNomtutor()))&&(e.equals(ltu.getTutorias().get(k).getNomreestu()))&&(f.equals(ltu.getTutorias().get(k).getFechatut()))&&(h.equals(ltu.getTutorias().get(k).getHoratut()))) {
+            if ((b1.equals(ltu.getTutorias().get(k).getNameTutor()))&&(e.equals(ltu.getTutorias().get(k).getNameEst()))&&(f.equals(ltu.getTutorias().get(k).getFechaTut()))&&(h.equals(ltu.getTutorias().get(k).getHoraTut()))) {
                                     ltu.getTutorias().get(k).setEstado("Tutor asistirá");
                            try {
                                 ltu.crearcvstu();
@@ -1463,7 +1460,7 @@ long f = 0, cest = 0, costu = 0;
 
     for (int i = 0; i < ltu.getAs().size(); i++) {
             if(nombretut.equals(ltu.getAs().get(i).getPersona().toString())){
-               ltu.crearsoli(ltu.getAs().get(i).getNomtut().toString(),b1,codigo, a,respuesta );
+               ltu.crearsoli(ltu.getAs().get(i).getNomTut().toString(),b1,codigo, a,respuesta );
        System.out.println("Aquiii");
                 try {
                     ltu.crearcvssol();
@@ -1500,7 +1497,7 @@ long f = 0, cest = 0, costu = 0;
 
 
         for (int k = 0; k < ltu.getTutorias().size(); k++) {
-            if ((b1.equals(ltu.getTutorias().get(k).getNomtutor()))&&(e.equals(ltu.getTutorias().get(k).getNomreestu()))&&(f.equals(ltu.getTutorias().get(k).getFechatut()))&&(h.equals(ltu.getTutorias().get(k).getHoratut()))) {
+            if ((b1.equals(ltu.getTutorias().get(k).getNameTutor()))&&(e.equals(ltu.getTutorias().get(k).getNameEst()))&&(f.equals(ltu.getTutorias().get(k).getFechaTut()))&&(h.equals(ltu.getTutorias().get(k).getHoraTut()))) {
                                     ltu.getTutorias().get(k).setEstado("Tutor no asistirá");
                            try {
                                 ltu.crearcvstu();
@@ -1549,10 +1546,10 @@ long f = 0, cest = 0, costu = 0;
         for (int i = 0; i < ltu.getAs().size(); i++) {
                 
                  if(nombretut.equals(ltu.getAs().get(i).getPersona().toString())){
-                     long cctut=ltu.getAs().get(i).getCctut();
+                     long cctut=ltu.getAs().get(i).getCcTut();
                
                      for (int j = 0; j < ltu.getMa().size(); j++) {
-                         if (cctut==ltu.getMa().get(j).getCc()) {
+                         if (cctut==ltu.getMa().get(j).getId()) {
                              
                               ((DefaultTableModel) materias.getModel()).setRowCount(materias.getRowCount() + 1);
                         materias.setValueAt(ltu.getMa().get(j).getMateria().toString(), p, 0);
@@ -1586,7 +1583,7 @@ Verhorario vh = new Verhorario();
         for (int i = 0; i < ltu.getAs().size(); i++) {
 
             if ((nombretut.equals(ltu.getAs().get(i).getPersona().toString()))) {
-                long ce = ltu.getAs().get(i).getCctut();
+                long ce = ltu.getAs().get(i).getCcTut();
                 System.out.println("ce" + ce);
                 for (int j = 0; j < ltu.getHtutor().size(); j++) {
                     System.out.println("ceht" + ltu.getHtutor().get(j).getCctutor());
@@ -1630,11 +1627,11 @@ Verhorario vh = new Verhorario();
         //nomest, direst,correst,ubiest,ccesti,telesti, edadesti, usuario, tipo, nombreusuario, contraseña
         try {
             for (int i = 0; i < ltu.getAs().size(); i++) {
-                long cctut=ltu.getAs().get(i).getCctut();
+                long cctut=ltu.getAs().get(i).getCcTut();
                 String cctut1 = Long.toString(cctut);
-                long lteltut1=ltu.getAs().get(i).getTeltut();
+                long lteltut1=ltu.getAs().get(i).getTelTut();
                 String telatut1 = Long.toString(lteltut1);
-                long ledadtut1=ltu.getAs().get(i).getEdadtut();
+                long ledadtut1=ltu.getAs().get(i).getEdadTut();
                 String edadtut1 = Long.toString(ledadtut1);
                 System.out.println("aqui voy"+nombretut);
                 System.out.println("nom"+ltu.getAs().get(i).getPersona().toString());
@@ -1642,11 +1639,11 @@ Verhorario vh = new Verhorario();
                 if(nombretut.equals(ltu.getAs().get(i).getPersona().toString())){
                     
                     System.out.println("aqui voy1");
-                    nomtut.setText(ltu.getAs().get(i).getNomtut().toString());
+                    nomtut.setText(ltu.getAs().get(i).getNomTut().toString());
                     usutut.setText(ltu.getAs().get(i).getPersona().toString());
-                    Txtdirtut.setText(ltu.getAs().get(i).getDirtut().toString());
-                    TxtCorreotut.setText(ltu.getAs().get(i).getCorrtut().toString());
-                    Txtubitut.setText(ltu.getAs().get(i).getUbitut().toString());
+                    Txtdirtut.setText(ltu.getAs().get(i).getDirTut().toString());
+                    TxtCorreotut.setText(ltu.getAs().get(i).getCorrTut().toString());
+                    Txtubitut.setText(ltu.getAs().get(i).getUbiTut().toString());
                     Txtcctut.setText(cctut1);
                     Txteltut.setText(telatut1);
                     TxtEdadtut.setText(edadtut1);
@@ -1691,7 +1688,7 @@ for (int i = 0; i < ltu.getAs().size(); i++) {
 if(ComboMateriasasp.getSelectedItem().toString().equals("...")){
                 JOptionPane.showMessageDialog(null, "Ingrese una materia",null,JOptionPane.ERROR_MESSAGE);
             }
-            ltu.crearma(ltu.getAs().get(i).getCctut(), ComboMateriasasp.getSelectedItem().toString());
+            ltu.crearma(ltu.getAs().get(i).getCcTut(), ComboMateriasasp.getSelectedItem().toString());
          try { 
              ltu.crearcvsma();
                         JOptionPane.showMessageDialog(null, "Materia agregada",null,JOptionPane.INFORMATION_MESSAGE);   
@@ -1712,7 +1709,7 @@ HorarioTutor ht=new HorarioTutor();
 nombretut=BAtut.getText().toString();
 for (int i = 0; i < ltu.getAs().size(); i++) {
      if(nombretut.equals(ltu.getAs().get(i).getPersona().toString())){
-ht.setScc(ltu.getAs().get(i).getCctut());
+ht.setScc(ltu.getAs().get(i).getCcTut());
 ht.setVisible(true);  
 }  
 }    // TODO add your handling code here:
@@ -1737,7 +1734,7 @@ ht.setVisible(true);
                     if(TxtEustut.getText().isEmpty()==false){
                         ltu.getAs().get(i).setUsuario(TxtEustut.getText().toString());
                     }
-                    System.out.println(""+ltu.getAs().get(i).getNomtut().toString());
+                    System.out.println(""+ltu.getAs().get(i).getNomTut().toString());
 
                     if(contraEtut.getText().toString().equals(recontraEtut.getText().isEmpty())){
 
@@ -1790,28 +1787,28 @@ ht.setVisible(true);
                 {
                     System.out.println("Igual");
                     if(TxtEnomtut.getText().isEmpty()==false){
-                        ltu.getAs().get(i).setNomtut(TxtEnomtut.getText().toString());
+                        ltu.getAs().get(i).setNomTut(TxtEnomtut.getText().toString());
                     }
-                    System.out.println(""+ltu.getAs().get(i).getNomtut().toString());
+                    System.out.println(""+ltu.getAs().get(i).getNomTut().toString());
 
                     if(TxtEcorreotut.getText().isEmpty()==false){
-                        ltu.getAs().get(i).setCorrtut(TxtEcorreotut.getText().toString());
+                        ltu.getAs().get(i).setCorrTut(TxtEcorreotut.getText().toString());
                     }
                     if(TxtEdirtut.getText().isEmpty()==false){
-                        ltu.getAs().get(i).setDirtut(TxtEdirtut.getText().toString());}
+                        ltu.getAs().get(i).setDirTut(TxtEdirtut.getText().toString());}
 
                     if(ComboEubitut.getSelectedIndex()==-1){
-                        ltu.getAs().get(i).setUbitut(ComboEubitut.getSelectedItem().toString());}
+                        ltu.getAs().get(i).setUbiTut(ComboEubitut.getSelectedItem().toString());}
 
                     if(lcctut!=0){
-                        ltu.getAs().get(i).setCctut(lcctut);
+                        ltu.getAs().get(i).setCcTut(lcctut);
 
                     }
                     if(lteltut!=0){
-                        ltu.getAs().get(i).setTeltut(lteltut);
+                        ltu.getAs().get(i).setTelTut(lteltut);
                     }
                     if(ledadtut!=0){
-                        ltu.getAs().get(i).setEdadtut(ledadtut);
+                        ltu.getAs().get(i).setEdadTut(ledadtut);
                     }
 
                 }
@@ -1863,7 +1860,7 @@ ht.setVisible(true);
 
 
         for (int k = 0; k < ltu.getTutorias().size(); k++) {
-            if ((b1.equals(ltu.getTutorias().get(k).getNomtutor()))&&(e.equals(ltu.getTutorias().get(k).getNomreestu()))&&(f.equals(ltu.getTutorias().get(k).getFechatut()))&&(h.equals(ltu.getTutorias().get(k).getHoratut()))) {
+            if ((b1.equals(ltu.getTutorias().get(k).getNameTutor()))&&(e.equals(ltu.getTutorias().get(k).getNameEst()))&&(f.equals(ltu.getTutorias().get(k).getFechaTut()))&&(h.equals(ltu.getTutorias().get(k).getHoraTut()))) {
                 if (ltu.getTutorias().get(k).getEstado().equals("Verificada por estudiante")) {
                     ltu.getTutorias().get(k).setEstado("Tutoria realizada");
                                     String msjt = JOptionPane.showInputDialog("Escriba un mensaje acerca del estudiante");
@@ -1877,10 +1874,10 @@ ht.setVisible(true);
                             }
                         
                              for (int i = 0; i < ltu.getAs().size(); i++) {
-                                        if (b1.equals(ltu.getAs().get(i).getNumt())) {
-                                     long n=ltu.getAs().get(i).getNumt();
+                                        if (b1.equals(ltu.getAs().get(i).getNumTut())) {
+                                     long n=ltu.getAs().get(i).getNumTut();
                                      n=(n+1);
-                                     ltu.getAs().get(i).setNumt(n);
+                                     ltu.getAs().get(i).setNumTut(n);
                                             try {
                                                 ltu.crearcvshtutor();
                                             } catch (IOException ex) {
@@ -1925,19 +1922,19 @@ ht.setVisible(true);
         }
         for (int l = 0; l < ltu.getAs().size(); l++) {
             if(nombretut.equals(ltu.getAs().get(l).getPersona())){
-                nom=ltu.getAs().get(l).getNomtut();
+                nom=ltu.getAs().get(l).getNomTut();
                 System.out.println("siii"+nom);
 
             }
         }
         for (int k = 0; k < ltu.getSoli().size(); k++) {
-            if(nom.equals(ltu.getSoli().get(k).getNombreDe().toString())){
+            if(nom.equals(ltu.getSoli().get(k).getNombreRemitente().toString())){
 
                 ((DefaultTableModel)TablaEnt1.getModel()).setRowCount(TablaEnt1.getRowCount()+1);
 
-                TablaEnt1.setValueAt(ltu.getSoli().get(k).getCodigoSolicitud(), y2, 0);
-                TablaEnt1.setValueAt(ltu.getSoli().get(k).getNombreDe(), y2, 1);
-                TablaEnt1.setValueAt(ltu.getSoli().get(k).getNombrePara(), y2, 2);
+                TablaEnt1.setValueAt(ltu.getSoli().get(k).getIdSolicitud(), y2, 0);
+                TablaEnt1.setValueAt(ltu.getSoli().get(k).getNombreRemitente(), y2, 1);
+                TablaEnt1.setValueAt(ltu.getSoli().get(k).getNombreDestinatario(), y2, 2);
                 TablaEnt1.setValueAt(ltu.getSoli().get(k).getSolicitud(), y2, 3);
                 TablaEnt1.setValueAt(ltu.getSoli().get(k).getRespuesta(), y2, 4);
                 y2=y2+1;
@@ -1945,13 +1942,13 @@ ht.setVisible(true);
         }
 
         for (int i = 0; i < ltu.getSoli().size(); i++) {
-            if(nom.equals(ltu.getSoli().get(i).getNombrePara().toString())){
+            if(nom.equals(ltu.getSoli().get(i).getNombreDestinatario().toString())){
 
                 ((DefaultTableModel)TablaEnt1.getModel()).setRowCount(TablaEnt1.getRowCount()+1);
 
-                TablaEnt1.setValueAt(ltu.getSoli().get(i).getCodigoSolicitud(), y2, 0);
-                TablaEnt1.setValueAt(ltu.getSoli().get(i).getNombreDe(), y2, 1);
-                TablaEnt1.setValueAt(ltu.getSoli().get(i).getNombrePara(), y2, 2);
+                TablaEnt1.setValueAt(ltu.getSoli().get(i).getIdSolicitud(), y2, 0);
+                TablaEnt1.setValueAt(ltu.getSoli().get(i).getNombreRemitente(), y2, 1);
+                TablaEnt1.setValueAt(ltu.getSoli().get(i).getNombreDestinatario(), y2, 2);
                 TablaEnt1.setValueAt(ltu.getSoli().get(i).getSolicitud(), y2, 3);
                 TablaEnt1.setValueAt(ltu.getSoli().get(i).getRespuesta(), y2, 4);
                 y2=y2+1;
@@ -1970,7 +1967,7 @@ ht.setVisible(true);
             respuesta=JOptionPane.showInputDialog("Escriba su respuesta");
 
             for (int i = 0; i < ltu.getSoli().size(); i++) {
-                if(q1==ltu.getSoli().get(i).getCodigoSolicitud()){
+                if(q1==ltu.getSoli().get(i).getIdSolicitud()){
                     ltu.getSoli().get(i).setRespuesta(respuesta);
                 }
 
@@ -1993,7 +1990,7 @@ ht.setVisible(true);
 
     for (int i = 0; i < ltu.getAs().size(); i++) {
             if(nombretut.equals(ltu.getAs().get(i).getPersona().toString())){
-               ltu.crearsoli(ltu.getAs().get(i).getNomtut().toString(),a,codigo, TextoRespuesta1.getText().toString(),respuesta );
+               ltu.crearsoli(ltu.getAs().get(i).getNomTut().toString(),a,codigo, TextoRespuesta1.getText().toString(),respuesta );
        System.out.println("Aquiii");
                 try {
                     ltu.crearcvssol();

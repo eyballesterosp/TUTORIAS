@@ -22,7 +22,7 @@ public class MateriasEs {
         return id;
     }
 
-    public void setId(long cc) {
+    public void setId(long id) {
         this.id = id;
     }
 

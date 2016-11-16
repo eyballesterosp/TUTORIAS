@@ -559,13 +559,9 @@ public class IAdministrador extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\KARIN\\Downloads\\kkk\\jk.jpg")); // NOI18N
-
         jLabel150.setFont(new java.awt.Font("Microsoft Tai Le", 1, 18)); // NOI18N
         jLabel150.setForeground(new java.awt.Color(102, 102, 102));
         jLabel150.setText("Ingresa los datos a editar en los espacios:");
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\KARIN\\Downloads\\kkk\\admin.jpg")); // NOI18N
 
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
         jPanel41.setLayout(jPanel41Layout);
@@ -591,7 +587,7 @@ public class IAdministrador extends javax.swing.JFrame {
                                     .addComponent(TxtEnom, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(TxtEdir, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(TxtEtel, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                                 .addComponent(jLabel6))))
                     .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(BtnLimpiar14)
@@ -600,7 +596,7 @@ public class IAdministrador extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel41Layout.setVerticalGroup(
             jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -651,7 +647,7 @@ public class IAdministrador extends javax.swing.JFrame {
                 .addContainerGap(19, Short.MAX_VALUE)
                 .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, 959, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
         jPanel25Layout.setVerticalGroup(
@@ -1138,8 +1134,6 @@ public class IAdministrador extends javax.swing.JFrame {
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\KARIN\\Downloads\\kkk\\fiin.jpg")); // NOI18N
-
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
         jPanel22Layout.setHorizontalGroup(
@@ -1520,13 +1514,13 @@ public class IAdministrador extends javax.swing.JFrame {
 
         BAadm.setEditable(false);
         BAadm.setBackground(new java.awt.Color(255, 255, 255));
-        BAadm.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        BAadm.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         BAadm.setForeground(new java.awt.Color(102, 102, 102));
         BAadm.setAutoscrolls(false);
         BAadm.setCaretColor(new java.awt.Color(255, 255, 255));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel7.setText("¡Bienvenidx");
+        jLabel7.setText("¡Bienvenid@");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel8.setText("!");
@@ -1548,10 +1542,10 @@ public class IAdministrador extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(BtnIngresar3, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(250, 250, 250)
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(BAadm, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(187, 187, 187)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BAadm, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel8)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1708,7 +1702,7 @@ try {
                 System.out.println("ahi vamos1");
 
                 for (int j = 0; j < ltu.getCa().size(); j++) {
-                    System.out.println("array edad"+ltu.getCa().get(j).getFechaci());
+                    System.out.println("array edad"+ltu.getCa().get(j).getFechaCi());
 
                 }
 
@@ -1781,23 +1775,23 @@ ltu.crearcvsca();
                 {
                     System.out.println("Igual");
                     if(TxtEnom.getText().isEmpty()==false){
-                        ltu.getAd().get(i).setNombadm(TxtEnom.getText().toString());
+                        ltu.getAd().get(i).setNombAdm(TxtEnom.getText().toString());
                     }
-                    System.out.println(""+ltu.getAd().get(i).getNombadm().toString());
+                    System.out.println(""+ltu.getAd().get(i).getNombAdm().toString());
 
                     if(TxtEcorreo.getText().isEmpty()==false){
-                        ltu.getAd().get(i).setCorradm(TxtEcorreo.getText().toString());
+                        ltu.getAd().get(i).setCorrAdm(TxtEcorreo.getText().toString());
                     }
                     if(TxtEdir.getText().isEmpty()==false){
-                        ltu.getAd().get(i).setDiradm(TxtEdir.getText().toString());}
+                        ltu.getAd().get(i).setDirAdm(TxtEdir.getText().toString());}
 
                                      
                     if(lccadm!=0){
-                        ltu.getAd().get(i).setCcadm(lccadm);
+                        ltu.getAd().get(i).setCcAdm(lccadm);
 
                     }
                     if(lteladm!=0){
-                        ltu.getAd().get(i).setTeladm(lteladm);
+                        ltu.getAd().get(i).setTelAdm(lteladm);
                     }
                     
                 }
@@ -1830,19 +1824,19 @@ int y2 =0;
         }
            for (int l = 0; l < ltu.getAd().size(); l++) {
             if(nombreadm.equals(ltu.getAd().get(l).getPersona())){
-            nom=ltu.getAd().get(l).getNombadm();
+            nom=ltu.getAd().get(l).getNombAdm();
                 System.out.println("siii"+nom);
                 
        }
             }
              for (int k = 0; k < ltu.getSoli().size(); k++) {
-            if(nom.equals(ltu.getSoli().get(k).getNombreDe().toString())){
+            if(nom.equals(ltu.getSoli().get(k).getNombreRemitente().toString())){
       
                   ((DefaultTableModel)TablaEnt.getModel()).setRowCount(TablaEnt.getRowCount()+1);
 
-            TablaEnt.setValueAt(ltu.getSoli().get(k).getCodigoSolicitud(), y2, 0);
-            TablaEnt.setValueAt(ltu.getSoli().get(k).getNombreDe(), y2, 1);
-            TablaEnt.setValueAt(ltu.getSoli().get(k).getNombrePara(), y2, 2);
+            TablaEnt.setValueAt(ltu.getSoli().get(k).getIdSolicitud(), y2, 0);
+            TablaEnt.setValueAt(ltu.getSoli().get(k).getNombreRemitente(), y2, 1);
+            TablaEnt.setValueAt(ltu.getSoli().get(k).getNombreDestinatario(), y2, 2);
             TablaEnt.setValueAt(ltu.getSoli().get(k).getSolicitud(), y2, 3);
             TablaEnt.setValueAt(ltu.getSoli().get(k).getRespuesta(), y2, 4);
            y2=y2+1;
@@ -1850,13 +1844,13 @@ int y2 =0;
            }
 
         for (int i = 0; i < ltu.getSoli().size(); i++) {
-            if(nom.equals(ltu.getSoli().get(i).getNombrePara().toString())){
+            if(nom.equals(ltu.getSoli().get(i).getNombreDestinatario().toString())){
       
                   ((DefaultTableModel)TablaEnt.getModel()).setRowCount(TablaEnt.getRowCount()+1);
 
-            TablaEnt.setValueAt(ltu.getSoli().get(i).getCodigoSolicitud(), y2, 0);
-            TablaEnt.setValueAt(ltu.getSoli().get(i).getNombreDe(), y2, 1);
-            TablaEnt.setValueAt(ltu.getSoli().get(i).getNombrePara(), y2, 2);
+            TablaEnt.setValueAt(ltu.getSoli().get(i).getIdSolicitud(), y2, 0);
+            TablaEnt.setValueAt(ltu.getSoli().get(i).getNombreRemitente(), y2, 1);
+            TablaEnt.setValueAt(ltu.getSoli().get(i).getNombreDestinatario(), y2, 2);
             TablaEnt.setValueAt(ltu.getSoli().get(i).getSolicitud(), y2, 3);
             TablaEnt.setValueAt(ltu.getSoli().get(i).getRespuesta(), y2, 4);
            y2=y2+1;
@@ -1892,17 +1886,17 @@ int y2 =0;
         //nomadm, diradm,corradm,ubiadm,ccadmi,teladmi, edadadmi, usuario, tipo, nombreusuario, contraseña
         try {
             for (int i = 0; i < ltu.getAd().size(); i++) {
-                long ccadm=ltu.getAd().get(i).getCcadm();
+                long ccadm=ltu.getAd().get(i).getCcAdm();
                 String ccadm1 = Long.toString(ccadm);
-                long lteladm1=ltu.getAd().get(i).getTeladm();
+                long lteladm1=ltu.getAd().get(i).getTelAdm();
                 String telaadm1 = Long.toString(lteladm1);
                
                 if(nombreadm.equals(ltu.getAd().get(i).getPersona().toString())){
                    
-                    Txtnom.setText(ltu.getAd().get(i).getNombadm().toString());
+                    Txtnom.setText(ltu.getAd().get(i).getNombAdm().toString());
                     Txtusu.setText(ltu.getAd().get(i).getPersona().toString());
-                    Txtdir.setText(ltu.getAd().get(i).getDiradm().toString());
-                    Txtcorreo.setText(ltu.getAd().get(i).getCorradm().toString());
+                    Txtdir.setText(ltu.getAd().get(i).getDirAdm().toString());
+                    Txtcorreo.setText(ltu.getAd().get(i).getCorrAdm().toString());
                     Txtcc.setText(ccadm1);
                     Txttel.setText(telaadm1);
                     Txtcontra.setText(ltu.getAd().get(i).getContraseña().toString());
@@ -1926,7 +1920,7 @@ int y2 =0;
                     if(TxtEusu.getText().isEmpty()==false){
                         ltu.getAd().get(i).setUsuario(TxtEusu.getText().toString());
                     }
-                    System.out.println(""+ltu.getAd().get(i).getNombadm().toString());
+                    System.out.println(""+ltu.getAd().get(i).getNombAdm().toString());
 
                     if(TxtEcontra.getText().toString().equals(TxtErecontra.getText().isEmpty())){
 
@@ -1960,14 +1954,14 @@ int y2 =0;
         //FECHA EXAMEN,CODEXAMEN,LUGAR EXAMEN,PUNTAJE,CARTERA,USUARIO,TIPO,NOMBRE USUARIO,CONTRASEÃ‘A
         ((DefaultTableModel)TablaTutores.getModel()).setRowCount(TablaTutores.getRowCount()+1);
   
-                TablaTutores.setValueAt(ltu.getAs().get(i).getCctut(), i, 0); 
-                   TablaTutores.setValueAt(ltu.getAs().get(i).getNomtut(), i, 1);
-                   TablaTutores.setValueAt(ltu.getAs().get(i).getDirtut(), i, 2); 
-                   TablaTutores.setValueAt(ltu.getAs().get(i).getTeltut(), i, 3); 
-                   TablaTutores.setValueAt(ltu.getAs().get(i).getCorrtut(), i, 4); 
-                   TablaTutores.setValueAt(ltu.getAs().get(i).getUbitut(), i, 5); 
-              TablaTutores.setValueAt(ltu.getAs().get(i).getProftut(), i, 6); 
-                TablaTutores.setValueAt(ltu.getAs().get(i).getNumt(), i, 7); 
+                TablaTutores.setValueAt(ltu.getAs().get(i).getCcTut(), i, 0); 
+                   TablaTutores.setValueAt(ltu.getAs().get(i).getNomTut(), i, 1);
+                   TablaTutores.setValueAt(ltu.getAs().get(i).getDirTut(), i, 2); 
+                   TablaTutores.setValueAt(ltu.getAs().get(i).getTelTut(), i, 3); 
+                   TablaTutores.setValueAt(ltu.getAs().get(i).getCorrTut(), i, 4); 
+                   TablaTutores.setValueAt(ltu.getAs().get(i).getUbiTut(), i, 5); 
+              TablaTutores.setValueAt(ltu.getAs().get(i).getProfTut(), i, 6); 
+                TablaTutores.setValueAt(ltu.getAs().get(i).getNumTut(), i, 7); 
                 TablaTutores.setValueAt(ltu.getAs().get(i).getCartera(), i, 8); 
                                     
 }       
@@ -1991,12 +1985,12 @@ int y2 =0;
        //         NOMBRE CONVOCATORIA, NOMBRE EMPRESA, DIRECCION EMPRESA, CIUDAD, VACANTES, PROFESION, EXPERIENCIA, IDIOMA, FECHA, TELEFONO, SALARIO
         ((DefaultTableModel)Tablatutorisa.getModel()).setRowCount(Tablatutorisa.getRowCount()+1);
   
-                Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getNomtutor(), i, 0); 
-                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getNomreestu(), i, 1);
-                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getLugartu(), i, 2); 
-                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getFechatut(), i, 3); 
-                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getHoratut(), i, 4); 
-                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getTematut(), i, 5); 
+                Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getNameTutor(), i, 0); 
+                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getNameEst(), i, 1);
+                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getLugarTu(), i, 2); 
+                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getFechaTut(), i, 3); 
+                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getHoraTut(), i, 4); 
+                   Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getTemaTut(), i, 5); 
               Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getEstado(), i, 6); 
                 Tablatutorisa.setValueAt(ltu.getTutorias().get(i).getCosto(), i, 7); 
                                     
@@ -2017,12 +2011,12 @@ int y2 =0;
 
         ((DefaultTableModel)TablaEstudiantes.getModel()).setRowCount(TablaEstudiantes.getRowCount()+1);
   
-                TablaEstudiantes.setValueAt(ltu.getEst().get(i).getCcest(), i, 0); 
-                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getNomest(), i, 1);
-                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getDirest(), i, 2); 
-                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getTelest(), i, 3); 
-                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getCorrest(), i, 4); 
-                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getUbiest(), i, 5); 
+                TablaEstudiantes.setValueAt(ltu.getEst().get(i).getCcEst(), i, 0); 
+                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getNomEst(), i, 1);
+                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getDirEst(), i, 2); 
+                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getTelEst(), i, 3); 
+                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getCorrEst(), i, 4); 
+                   TablaEstudiantes.setValueAt(ltu.getEst().get(i).getUbiEst(), i, 5); 
                     TablaEstudiantes.setValueAt(ltu.getEst().get(i).getCartera(), i, 6); 
                                     
 }               // TODO add your handling code here:
@@ -2059,7 +2053,7 @@ if(costu!=0){
 
                     for (int i = 0; i < ltu.getAs().size(); i++) {
 
-                        if ((b1.equals(ltu.getAs().get(i).getNomtut().toString()))) {
+                        if ((b1.equals(ltu.getAs().get(i).getNomTut().toString()))) {
                             c = ltu.getAs().get(i).getCartera();
 
                             c = (c + cos);
@@ -2070,7 +2064,7 @@ if(costu!=0){
                                 Logger.getLogger(Estudiante.class.getName()).log(Level.SEVERE, null, ex);
                             }
                             for (int k = 0; k < ltu.getTutorias().size(); k++) {
-                                if ((b1.equals(ltu.getTutorias().get(i).getNomtutor()))&&(e.equals(ltu.getTutorias().get(i).getNomreestu()))&&(f.equals(ltu.getTutorias().get(i).getFechatut()))&&(h.equals(ltu.getTutorias().get(i).getHoratut()))) {
+                                if ((b1.equals(ltu.getTutorias().get(i).getNameTutor()))&&(e.equals(ltu.getTutorias().get(i).getNameEst()))&&(f.equals(ltu.getTutorias().get(i).getFechaTut()))&&(h.equals(ltu.getTutorias().get(i).getHoraTut()))) {
                                     ltu.getTutorias().get(k).setCosto(0);
                                     try {
                                         ltu.crearcvstu();
@@ -2108,7 +2102,7 @@ try {
               respuesta=JOptionPane.showInputDialog("Escriba su respuesta");
                     
                     for (int i = 0; i < ltu.getSoli().size(); i++) {
-                        if(q1==ltu.getSoli().get(i).getCodigoSolicitud()){
+                        if(q1==ltu.getSoli().get(i).getIdSolicitud()){
                         ltu.getSoli().get(i).setRespuesta(respuesta);
                         }
      
@@ -2134,7 +2128,7 @@ try {
 
     for (int i = 0; i < ltu.getAd().size(); i++) {
             if(nombreadm.equals(ltu.getAd().get(i).getPersona().toString())){
-               ltu.crearsoli(ltu.getAd().get(i).getNombadm().toString(),d1,codigo, a,respuesta );
+               ltu.crearsoli(ltu.getAd().get(i).getNombAdm().toString(),d1,codigo, a,respuesta );
                 try {
                     ltu.crearcvssol();
                                          JOptionPane.showMessageDialog(null, "Mensaje enviado", null, JOptionPane.ERROR_MESSAGE);
@@ -2158,7 +2152,7 @@ try {
 
     for (int i = 0; i < ltu.getAd().size(); i++) {
             if(nombreadm.equals(ltu.getAd().get(i).getPersona().toString())){
-               ltu.crearsoli(ltu.getAd().get(i).getNombadm().toString(),c1,codigo, a,respuesta );
+               ltu.crearsoli(ltu.getAd().get(i).getNombAdm().toString(),c1,codigo, a,respuesta );
                 try {
                     ltu.crearcvssol();
                                          JOptionPane.showMessageDialog(null, "Mensaje enviado", null, JOptionPane.ERROR_MESSAGE);
@@ -2178,7 +2172,7 @@ try {
             
             long s= (long) TablaTutores.getValueAt(TablaTutores.getSelectedRow(), 0);
             for (int i = 0; i < ltu.getAs().size(); i++) {
-              if(s==ltu.getAs().get(i).getCctut())
+              if(s==ltu.getAs().get(i).getCcTut())
               {
                   ltu.getAs().remove(i);
                   modelo8.removeRow(i); 
@@ -2201,7 +2195,7 @@ try {
             
             long s= (long) TablaEstudiantes.getValueAt(TablaEstudiantes.getSelectedRow(), 0);
             for (int i = 0; i < ltu.getEst().size(); i++) {
-              if(s==ltu.getEst().get(i).getCcest())
+              if(s==ltu.getEst().get(i).getCcEst())
               {
                   ltu.getEst().remove(i);
                   modelo9.removeRow(i); 

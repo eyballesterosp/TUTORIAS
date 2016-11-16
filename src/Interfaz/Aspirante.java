@@ -310,8 +310,6 @@ public class Aspirante extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\KARIN\\Downloads\\kkk\\images.jpeg")); // NOI18N
-
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
         jPanel23Layout.setHorizontalGroup(
@@ -467,10 +465,11 @@ public class Aspirante extends javax.swing.JFrame {
                             .addComponent(TxtUsuasp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel23Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel40)
-                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(contra, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(contra, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel40)
+                                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -623,7 +622,7 @@ public class Aspirante extends javax.swing.JFrame {
                 System.out.println("ahi vamos1");
 
                 for (int j = 0; j < ltu.getAs().size(); j++) {
-                    System.out.println("array edad"+ltu.getAs().get(j).getEdadtut());
+                    System.out.println("array edad"+ltu.getAs().get(j).getEdadTut());
 
                 }
 
@@ -749,7 +748,7 @@ public class Aspirante extends javax.swing.JFrame {
 
             for (int i = 0; i <ltu.getCa().size(); i++) {
 
-                if(((ccasp==ltu.getCa().get(i).getCctut())&&(codexamen==ltu.getCa().get(i).getCodexam()))&&(puntaje==ltu.getCa().get(i).getPuntaje())){
+                if(((ccasp==ltu.getCa().get(i).getCcTut())&&(codexamen==ltu.getCa().get(i).getCodExam()))&&(puntaje==ltu.getCa().get(i).getPuntaje())){
 
                     if (ltu.getCa().get(i).getPuntaje()>=80) {
                         JOptionPane.showMessageDialog(null, "Es apto para ser tutor",null,JOptionPane.INFORMATION_MESSAGE);
